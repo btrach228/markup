@@ -1,0 +1,54 @@
+.footer-container {
+  background-image: url("../../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
+  color: #fff;
+  gap: 0 50px;
+  border: 0.5px solid rgba(238, 238, 238, 0.1607843137);
+}
+.footer-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .footer-container-wrapper {
+    flex-direction: column;
+  }
+}
+
+.col-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5px 0;
+}
+
+.fa-arrow-right-long {
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+.formButtonCustom:hover .fa-arrow-right-long {
+  color: rgba(255, 255, 255, 0.5294117647);
+}
+
+.social-icons-list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0 20px;
+  padding: 0;
+}
+.social-icons-list a {
+  list-style: none;
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+.social-icons-list a:hover {
+  color: rgba(255, 255, 255, 0.337254902);
+}/*# sourceMappingURL=footer.css.map */

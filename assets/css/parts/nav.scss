@@ -1,0 +1,37 @@
+.navigation {
+  background-color: #222222cd !important;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  &-menu {
+    &_top li {
+      color: #fff;
+      list-style: none;
+      padding: 0 15px 0 0;
+    }
+    &_bottom li a {
+      color: #fff;
+    }
+    &_bottom li:hover {
+      color: red;
+    }
+  }
+  &-logo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+}
+
+.nav-link:hover {
+  color: rgba($color: #fff, $alpha: 0.7);
+}
+.dropdown-menu-custom li a {
+  color: #000 !important;
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
