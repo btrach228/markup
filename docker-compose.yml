@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  backend:
+    build: .
+    container_name: "docker_apache-hw"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/var/www/html
+    extra_hosts:
+      - host.docker.internal:host-gateway
