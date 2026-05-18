@@ -1,0 +1,52 @@
+.footer-container {
+  background-image: url("../../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
+  color: #fff;
+  gap: 0 50px;
+  border: 0.5px solid #eeeeee29;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.col-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5px 0;
+}
+.fa-arrow-right-long {
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+.formButtonCustom:hover {
+  .fa-arrow-right-long {
+    color: #ffffff87;
+  }
+}
+.social-icons-list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0 20px;
+  padding: 0;
+  a {
+    list-style: none;
+    color: #fff;
+    transition: all ease-in-out 0.4s;
+    &:hover {
+      color: #ffffff56;
+    }
+  }
+}

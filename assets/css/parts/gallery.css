@@ -1,0 +1,47 @@
+#carouselExample {
+  display: none;
+}
+@media (max-width: 768px) {
+  #carouselExample {
+    display: block;
+    margin: 10px 0;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.carousel-item img {
+  width: 100%; /* Responsive width */
+  height: 250px; /* Fixed height for all images */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery {
+  padding: 50px 0;
+  width: 100%;
+}
+.gallery-images {
+  display: flex;
+  justify-content: center;
+}
+.gallery-images-left {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-images-left img {
+  padding: 10px;
+}
+.gallery-images-right {
+  justify-content: center;
+}
+.gallery-images-right img {
+  padding: 10px;
+  gap: 10px 0;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .gallery-images {
+    display: none;
+  }
+}/*# sourceMappingURL=gallery.css.map */

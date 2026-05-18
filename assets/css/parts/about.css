@@ -1,0 +1,78 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .about-container {
+    margin-top: 20px;
+  }
+}
+.about-container_row-col {
+  display: flex;
+  justify-content: center;
+  gap: 0 50px;
+}
+@media (max-width: 768px) {
+  .about-container_row-col {
+    flex-direction: column;
+  }
+}
+.about-container_row-col_img {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .about-container_row-col_img {
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .about-container_row-col_img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+.about-container_row-col_img:before, .about-container_row-col_img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+.about-container_row-col_img:hover {
+  cursor: pointer;
+}
+.about-container_row-col_img:hover:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+.about-container_row-col_img:hover:after {
+  background-image: url("../../img/play-icon.png") no-repeat center center;
+  transform: scale(1.5);
+}
+.about-container_row-col_img:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+.about-container_row-col_img:after {
+  background: url("/assets/img/play-icon.png") no-repeat center center;
+  background-size: initial;
+}
+.about-container_row-col_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+.about-container_row-col_text img {
+  width: 14%;
+}
+@media (max-width: 768px) {
+  .about-container_row-col_text {
+    gap: 15px 0;
+    padding: 25px 10px;
+  }
+}/*# sourceMappingURL=about.css.map */

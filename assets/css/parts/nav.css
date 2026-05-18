@@ -1,0 +1,36 @@
+.navigation {
+  background-color: rgba(34, 34, 34, 0.8039215686) !important;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.navigation-menu_top li {
+  color: #fff;
+  list-style: none;
+  padding: 0 15px 0 0;
+}
+.navigation-menu_bottom li a {
+  color: #fff;
+}
+.navigation-menu_bottom li:hover {
+  color: red;
+}
+.navigation-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dropdown-menu-custom li a {
+  color: #000 !important;
+}
+.dropdown-menu-custom li a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=nav.css.map */
