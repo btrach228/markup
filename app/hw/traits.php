@@ -45,4 +45,5 @@ class traintsSum{
 $res = new traintsSum();
 var_dump($res->getSum());
 
+
 ?>
