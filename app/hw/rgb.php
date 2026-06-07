@@ -2,38 +2,42 @@
 
 class ValueObject
 {
-    private $red;
-    private $green;
-    private $blue;
+    private int $red;
+    private int $green;
+    private int $blue;
 
-    public function __construct($red, $green, $blue)
+    public function __construct(int $red, int $green, int $blue)
     {
         $this->setRed($red);
         $this->setGreen($green);
         $this->setBlue($blue);
     }
-    public function getRed(){
+    public function getRed(): int
+    {
         return $this->red;
     }
-    public function setRed($red){
-        return "Color red set to: ". $this->red = $this->check($red) . '</br>';;
+    public function setRed(int $red): void
+    {
+        $this->red = $this->check($red);
     }
 
-    public function getGreen(){
+    public function getGreen(): int
+    {
         return $this->green;
     }
 
-    public function setGreen($green){
-        return "Color red set to: ". $this->green = $this->check($green) . '</br>';;
-
+    public function setGreen(int $green): void{
+       $this->green = $this->check($green);
     }
 
-    public function getBlue(){
+    public function getBlue(): int
+    {
         return $this->blue;
     }
 
-    public function setBlue($blue){
-        return "Color red set to: ". $this->blue = $this->check($blue) . '</br>';;
+    public function setBlue(int $blue): void
+    {
+        $this->blue = $this->check($blue);
     }
 
     public function rgbToRandom(){
@@ -45,7 +49,7 @@ class ValueObject
     }
 
     public function compare2(ValueObject $color): bool{
-        return $this->red == $color->red || $this->green == $color->green || $this->blue == $color->blue;
+        return $this->red === $color->red && $this->green === $color->green && $this->blue === $color->blue;
     }
 
     public function mix(ValueObject $color): ValueObject
@@ -60,7 +64,7 @@ class ValueObject
     private function check($value){
         $value = (int)$value;
         if($value < 0 || $value > 255){
-            return new Exception("Color code must be between 0 and 255");
+            throw new Exception("Color code must be between 0 and 255");
         }
         return $value;
     }
