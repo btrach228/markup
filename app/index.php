@@ -1,3 +1,3 @@
 <?php
 
-echo "Hello, World!";
+include __DIR__  . "/hw/rgb.php";
